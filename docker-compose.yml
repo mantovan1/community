@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:4.2
+    restart: always
+    ports:
+      - ${MONGODB_PORT}:${MONGODB_PORT}
+    environment:
+      MONGO_INITDB_DATABASE: ${MONGODB_DATABASE}
