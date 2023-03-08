@@ -21,8 +21,8 @@ app.use(sessions({
 }));
 
 app.get('/', async (req, res) => {
-	res.json({api_name: 'api community', year_creation: 2022, see_more: 'https://github.com/mantovan1'});
 	res.status(200);
+	res.json({api_name: 'api community', year_creation: 2022, see_more: 'https://github.com/mantovan1'});
 	res.end();
 })
 

@@ -34,7 +34,7 @@ router.get('/create/:title/:text', async (req, res) => {
   			});
 		});
 	} else {
-		res.status(307);
+		res.status(302);
 		res.redirect('/tempuser/join');
 		res.end();
 	}
@@ -101,7 +101,7 @@ router.get('/comment/:layer/:parentid/:title/:text', async (req, res) => {
             }
         });
     } else {
-        res.status(307);
+        res.status(302);
         res.redirect('/tempuser/join');
         res.end();
     }
